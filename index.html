@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -14,20 +13,44 @@
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <script defer src="/js/main.js"></script>
+  <script defer src="/js/constants.js"></script>
+
+  <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+<div class="header" >
+  <nav class="clearfix">
+    <ul class="clearfix">
+      <li><a onclick="navMove('section-1')" id="nav_menu_1">HOME</a></li>
+      <li><a onclick="navMove('section-2')" id="nav_menu_2">PORTFOLIO</a></li>
+      <li><a onclick="navMove('section-3')" id="nav_menu_3">SERVICE</a></li>
+      <li><a onclick="navMove('section-4')" id="nav_menu_4">CONTACT US</a></li>
+    </ul>
+  </nav>
+</div>
 
+<div class="section-1" id="section-1">
+  <p></p>
+</div>
+
+<div class="section-2" id="section-2">
+  <p></p>
+</div>
+<div class="section-3" id="section-3">
+  <p></p>
+</div>
+<div class="section-4" id="section-4">
+  <p></p>
+</div>
 </body>
 
 </html>
