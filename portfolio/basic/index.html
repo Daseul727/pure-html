@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+  <script defer src="/js/portfolio/main.js"></script>
+  <script defer src="/js/portfolio/constants.js"></script>
+
+  <link rel="stylesheet" href="/css/portfolio/basic/main.css">
+
+  <!-- SWIPER 외부 라이브러리 연결-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="header">
+    <nav class="clearfix">
+      <ul class="clearfix">
+        <li><a onclick="navMove('section-1')" id="nav_menu_1"></a></li>
+        <li><a onclick="navMove('section-2')" id="nav_menu_2"></a></li>
+        <li><a onclick="navMove('section-3')" id="nav_menu_3"></a></li>
+        <li><a onclick="navMove('section-4')" id="nav_menu_4"></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="section-1" id="section-1">
+    <div class="swiper swiper-001">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-001">
+          <img src="/img/portfolio/basic/basic-banner1.jpg" alt="banner1"/>
+        </div>
+        <div class="swiper-slide swiper-slide-001">
+          <img src="/img/portfolio/basic/basic-banner2.jpg" alt="banner2"/>
+        </div>
+        <div class="swiper-slide swiper-slide-001">
+          <img src="/img/portfolio/basic/basic-banner3.jpg" alt="banner3"/>
+        </div>
+      </div>
+
+      <div class="swiper-pagination swiper-pagination-001"></div>
+    </div>
+  </div>
+
+  <div class="section-2" id="section-2">
+    <div class="section-2-wrap">
+      <div class="section-2-title-wrap">
+        <p class="section-2-title">달리는 크림빵</p>
+        <p class="section-2-description">크림빵에 진심인 셰프들이 모였습니다</p>
+      </div>
+      <div class="section-2-img-wrap">
+        <img class="section-2-img" src="/img/portfolio/basic/basic-title-img.jpg" alt="title_img">
+      </div>
+    </div>
+  </div>
+  <div class="section-3" id="section-3">
+    <p></p>
+  </div>
+  <div class="section-4" id="section-4">
+    <p></p>
+  </div>
+</body>
+
+<footer>
+  <div class="footer-wrap">
+    <div class="footer_logo">
+      <img src="/img/portfolio/basic/basic-logo.jpg" alt="logo"/>
+    </div>
+    <ul class="footer-ul">
+      <li>
+        <p>사업자명 : 달리는 크림빵</p>
+        <p>주소 : 경기도 김포시</p>
+        <p>우편번호 : 000000</p>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+</html>
