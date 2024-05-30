@@ -51,3 +51,7 @@ new Swiper('.swiper-001', {
     clickable: true
   }
 })
+
+AOS.init({
+  duration: 1200,
+})
