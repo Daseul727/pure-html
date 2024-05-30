@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
   document.title = MAIN_TITLE;
 
