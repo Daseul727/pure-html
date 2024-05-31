@@ -1,4 +1,4 @@
-const MAIN_TITLE = "pure html"
+const MAIN_TITLE = "달리는 크림빵"
 
 const NAV_MENU_1 = "HOME"
 const NAV_MENU_2 = "ABOUT"
