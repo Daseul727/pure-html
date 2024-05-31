@@ -91,7 +91,7 @@ nav a#pull {
 
 .section-1 {
   width: 100%;
-  background: url("../../../img/section2.png") no-repeat center center;
+  background-color: #FFFFFF;
   background-size: cover;
 }
 
@@ -165,10 +165,30 @@ nav a#pull {
 
 .section-3 {
   width: 100%;
-  height: 100vh;
-  background: url("../../../img/section2.png") no-repeat center center;
   background-size: cover;
+  background-color: #FFFFFF;
+  padding: 100px 0 200px 0;
 }
+
+.section-3 .title-wrap {
+  font-size: 25px;
+  padding: 0 0 100px 50px;
+}
+.swiper-003 {
+  width: 100%;
+}
+
+.swiper-003 .swiper-slide-003 {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-003 .swiper-slide-003 img {
+  width: 500px;
+}
+
 
 /* section-4 ============================================== */
 
