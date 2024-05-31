@@ -66,7 +66,12 @@ new Swiper('.swiper-003', {
   loop: true,
 
   //보여줄 화면
-  slidesPerView: 4,
+  slidesPerView: 2,
   spaceBetween: 30,
   centeredSlides: true,
+  breakpoints  : {
+    768 : {
+      slidesPerView: 4
+    }
+  }
 })

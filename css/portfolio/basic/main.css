@@ -33,12 +33,6 @@ nav {
   font-size: 12pt;
   font-family: 'PT Sans', Arial, Sans-serif;
   position: relative;
-}
-
-nav ul {
-  padding: 0;
-  margin: 0 auto;
-  width: auto;
   text-align: right;
 }
 
@@ -90,15 +84,12 @@ nav a#pull {
 /* section-1 ============================================== */
 
 .section-1 {
-  width: 100%;
   background-color: #FFFFFF;
   background-size: cover;
 }
 
 /* swiper 001 */
 .swiper-001 {
-  width: auto;
-  height: 700px;
   position: relative;
 }
 
@@ -109,11 +100,13 @@ nav a#pull {
 }
 
 .swiper-001 .swiper-slide-001 img {
+  background-size: cover;
+  background-position: center;
   width: 100%;
 }
 
 .swiper-001 .swiper-pagination-bullet {
-  background-color: #FFFFFF;
+  background-color: black;
 }
 
 .swiper-pagination-001 {
@@ -134,7 +127,7 @@ nav a#pull {
   padding:100px 100px 100px 100px;
 }
 
-.section-2-title-wrap {
+.section-2-item {
   flex: 0 0 48%;
   max-width: 50%;
   text-align: center;
@@ -149,12 +142,6 @@ nav a#pull {
 .section-2-description {
   font-size: 20px;
   font-weight: 500;
-}
-
-.section-2-img-wrap {
-  flex: 0 0 48%;
-  max-width: 50%;
-  text-align: center;
 }
 
 .section-2-img {
@@ -180,12 +167,14 @@ nav a#pull {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 .swiper-003 .swiper-slide-003 img{
   display:block;
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 
@@ -261,3 +250,75 @@ footer {
   line-height: 1.5;
 }
 
+/* 반응형 ============================================== */
+
+@media (max-width: 768px) {
+  .section-2-wrap {
+    display: block;
+    padding: 30px 10px 30px 10px;
+  }
+
+  .section-2-item {
+    flex: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .section-2-title {
+    font-size: 40px;
+  }
+
+  .section-4 {
+    padding: 100px 20px 100px 20px;
+  }
+
+  footer {
+    padding:20px 30px 20px 30px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  nav li a {
+    font-size: 13px;
+    padding: 10px 10px;
+  }
+
+  .swiper-001 .swiper-slide-001 img {
+    height: 500px; /* 모바일에서 배너 높이 조정 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .section-4 {
+    padding: 100px 20px 100px 20px;
+  }
+
+  .section-4-title {
+    font-size: 40px;
+  }
+
+  .section-4-description {
+    font-size: 20px;
+  }
+
+  .footer-ul {
+    display: block;
+  }
+
+  .footer-ul li {
+    width: 100%;
+    margin-top:10px;
+  }
+  .footer-ul > li:last-child {
+    width: 100%;
+    text-align: left;
+  }
+
+  .copyright_nbsp {
+    display: none;
+  }
+
+}
