@@ -141,13 +141,14 @@ nav a#pull {
 .portfolio-li {
   width: 20%;
   padding: 0 25px;
+  float: left;
 }
 
 .portfolio-item {
   display: block;
   position: relative;
   text-decoration-line: none;
-  text-decoration-color: black;
+  color: black;
 }
 
 .portfolio-item:active, .portfolio-item:visited {
@@ -175,6 +176,21 @@ nav a#pull {
   top:12px;
   left: 12px;
 }
+
+.portfolio-thumbnail-badge-new {
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: blue;
+  border-radius: 999px;
+  display: inline-block;
+  padding: 4px 8px 4px 8px;
+  position: absolute;
+  top:12px;
+  left: 12px;
+}
+
+
 
 .portfolio-title {
   padding: 22px 0 22px 0;
