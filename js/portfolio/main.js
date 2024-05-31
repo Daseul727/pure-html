@@ -60,20 +60,13 @@ new Swiper('.swiper-003', {
 
   //자동
   autoplay: {
-    delay: 4000
+    delay: 3000,
+    loop: true
   },
   loop: true,
 
   //보여줄 화면
   slidesPerView: 4,
   spaceBetween: 30,
-  centeredSlides: false,
-  pagination: {
-    el: '.swiper-pagination-003',
-    clickable: true
-  },
-  navigation: {
-    prevEl: '.swiper-button-prev-003',
-    nextEl: '.swiper-button-next-003'
-  }
+  centeredSlides: true,
 })

@@ -164,7 +164,6 @@ nav a#pull {
 /* section-3 ============================================== */
 
 .section-3 {
-  width: 100%;
   background-size: cover;
   background-color: #FFFFFF;
   padding: 100px 0 200px 0;
@@ -175,18 +174,18 @@ nav a#pull {
   padding: 0 0 100px 50px;
 }
 .swiper-003 {
-  width: 100%;
 }
 
 .swiper-003 .swiper-slide-003 {
-  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.swiper-003 .swiper-slide-003 img {
-  width: 500px;
+.swiper-003 .swiper-slide-003 img{
+  display:block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 
