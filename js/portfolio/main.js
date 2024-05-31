@@ -1,3 +1,8 @@
+$(document).ready(function() {
+  AOS.init({
+    duration: 1200,
+  })
+});
 
 document.addEventListener("DOMContentLoaded", function() {
   document.title = MAIN_TITLE;
@@ -50,10 +55,6 @@ new Swiper('.swiper-001', {
     el: '.swiper-pagination-001',
     clickable: true
   }
-})
-
-AOS.init({
-  duration: 1200,
 })
 
 new Swiper('.swiper-003', {

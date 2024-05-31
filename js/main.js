@@ -1,3 +1,9 @@
+$(document).ready(function() {
+  AOS.init({
+    duration: 1200,
+  })
+});
+
 document.addEventListener("DOMContentLoaded", function() {
   document.title = MAIN_TITLE;
 
