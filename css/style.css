@@ -136,14 +136,14 @@ nav a#pull {
 }
 
 .portfolio-ul {
-  display: flex;
-  flex-wrap: wrap;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px; /* 아이템 사이 간격 */
 }
 .portfolio-li {
-  flex: calc(25% - 50px); /* 25% width minus the padding */
+  box-sizing: border-box;
   padding: 0 25px;
-  box-sizing: border-box; /* Ensure padding is included in width calculation */
   margin-bottom: 20px; /* Space between rows */
 }
 
@@ -319,7 +319,7 @@ footer {
 
 
   .portfolio-li {
-    flex: 0 0 calc(50% - 20px); /* 작은 화면에서는 항목을 2열로 */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 작은 화면에서는 더 좁은 열로 */
   }
 
   .section-2 .title-wrap {
@@ -341,10 +341,6 @@ footer {
   nav li a {
     font-size: 13px;
     padding: 10px 10px;
-  }
-
-  .portfolio-li {
-   flex: 0 0 100%; /* 모바일에서는 항목을 1열로 */
   }
 
   .footer-ul {
