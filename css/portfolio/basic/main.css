@@ -6,7 +6,6 @@
 
 html, body {
   position: relative;
-  height: 100%;
   font-family: 'Noto Sans', sans-serif;
   background: #eee;
   font-size: 14px;
@@ -138,9 +137,14 @@ nav a#pull {
 .section .title-wrap {
   padding: 0 0 10px 40px;
   color: #FFFFFF;
-  font-size: 50px;
   width: 90%;
 }
+
+.section .title-wrap p {
+  font-size: 60px;
+  font-weight: 800;
+}
+
 .section .description-wrap {
   padding: 0 0 40px 40px;
   color: #FFFFFF;
@@ -152,7 +156,7 @@ nav a#pull {
 
 .section-1 {
   padding: 100px 0 50px 0;
-  margin-top: 130px;
+  margin-top: 110px;
   background: url("../../../img/portfolio/basic/basic_001_background.jpg") no-repeat fixed center;
 }
 /* swiper 001 */
@@ -205,4 +209,81 @@ nav a#pull {
 .section-3 .title-wrap,
 .section-3 .description-wrap {
   text-align: right;
+}
+
+/* footer ============================================== */
+
+footer {
+  padding:40px 100px 40px 100px;
+  background-color: black;
+  font-size: 11px;
+  color: #e5e7eb;
+  text-align: center;
+}
+
+footer img {
+  width: 100px;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .section .title-wrap p {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .section .description-wrap p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .header-wrap {
+    height: 60px;
+  }
+  nav li a {
+    padding:10px;
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 0;
+  }
+
+  nav li a {
+    color: black;
+    padding:10px;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .section .title-wrap p {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .section .description-wrap p {
+    font-size: 15px;
+  }
+
+  .section-1 {
+    margin-top:90px;
+  }
+
+  .swiper-001 {
+    padding: 0 0 200px 0;
+  }
+
+  .section-2,
+  .section-3 {
+    padding: 30vh 0 30vh 0;
+  }
 }
