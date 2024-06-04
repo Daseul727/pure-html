@@ -182,7 +182,7 @@ nav a#pull {
 
 .section-4 {
   padding: 100px; /* 패딩을 사용하여 이미지가 잘리는 효과 */
-  background: url("../../../img/portfolio/basic/bakery.jpg") no-repeat fixed center;
+  background: url("creamppang/bakery.jpg") no-repeat fixed center;
   background-size: cover;
 }
 
